@@ -155,13 +155,22 @@
         }
 
         button:hover { opacity: 0.9; transform: translateY(-1px); }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1e3f 100%);
+            /* CHANGE height to min-height so you can scroll to see the new text */
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column; /* This helps stack the chat and the text below it */
+            align-items: center;
+            justify-content: flex-start; /* Start from top so text flows down */
+            padding-top: 5vh;
+            color: var(--text);
+        }
 
-        /* Responsive */
-        **Change it to this:**
-```css
         @media (max-width: 768px) {
             .sidebar { display: none; }
         }
+    </style>
 </head>
 <body>
 
